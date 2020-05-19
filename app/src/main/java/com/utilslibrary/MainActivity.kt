@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         println("Fetching String preferences ${SharedPreferencesHelper.invoke(applicationContext).fetchStringPreferences("name")}")
         println("Fetching Integer preferences ${SharedPreferencesHelper.invoke(applicationContext).fetchIntPreferenes("age")}")
         println("Fetching Float preferences ${SharedPreferencesHelper.invoke(applicationContext).fetchFloatPreferences("height")}")
-
+       LoggerHelper().displayErrorLog(TAG,"Displaying Error log")
 
     }
 }
